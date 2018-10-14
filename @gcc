@@ -1,0 +1,10 @@
+#! /usr/bin/env yeast
+#! sh $0 $1
+
+mkdir -p ~/.cache/kombucha/src/
+cat $1 > ~/.cache/kombucha/src/$$.c
+
+mkdir -p ~/.cache/kombucha/bin/
+gcc ~/.cache/kombucha/src/$$.c -o  ~/.cache/kombucha/bin/$$.out
+
+~/.cache/kombucha/bin/$$.out
