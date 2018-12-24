@@ -37,19 +37,6 @@ Kombucha aliases always start by `@` symbol to not enter in conflict with existe
 
 By combining theses utils together we intent to help the writing of simpler and more robust build suites.
 
-This repository contains all aliases, but the simple tool to install and update them is contained in [YeAST](https://github.com/yvan-sraka/YeAST/blob/master/kombucha) one:
-
-```makefile
-#! /usr/bin/env yeast
-#! make -sf $0 $1
-
-init:
-    git clone https://github.com/yvan-sraka/Kombucha.git ~/.kombucha
-
-update:
-    cd ~/.kombucha ; git pull -r
-```
-
 The idea of using GitHub as a service to handle aliases was directly inspired by [HomeBrew Formula](https://github.com/Homebrew/homebrew-core/tree/master/Formula)!
 
 ## Getting Started
@@ -61,14 +48,33 @@ These instructions will get you a copy of the project up and running on your loc
 Get YeAST binary from source:
 
 ```shell
-git clone git@github.com:yvan-sraka/YeAST.git
-cd YeAST
-./configure
-make
-sudo make install
+curl https://raw.githubusercontent.com/yvan-sraka/YeAST/master/install.sh -sSf | sh
 ```
 
+### Build
+
+You need an [Haskell build environment](https://www.haskell.org/downloads) on your computer, then just:
+
+```shell
+ghc kombucha.hs -o kombucha
+```
+
+You can also download an executable directly on the [release page](https://github.com/yvan-sraka/cleopatra/releases) of the repository.
+
 ### Usage
+
+```shell
+kombucha <COMMAND>
+```
+
+#### Flags
+
+- `-h`, `--help` Prints help information String
+- `-V`, `--version` Prints version information
+
+#### Commands
+
+- `update` Update aliases collection contained in `.kombucha` folder
 
 ```shell
 export PATH="$HOME/.kombucha:$PATH"
