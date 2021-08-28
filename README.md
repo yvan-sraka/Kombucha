@@ -6,7 +6,7 @@ _Simple aliases collection for [YeAST](https://github.com/yvan-sraka/YeAST)_
 
 This repository contains scripts that offer a standard way to work with common UNIX utils.
 
-The first idea is to always take input as first positionnal argument and write the output on standard output, e.g:
+The first idea is to always take input as the first positional argument and write the output on standard output, e.g:
 
 ```shell
 @gcc main.c
@@ -25,7 +25,7 @@ import Text.Regex
 main = interact (\xs -> subRegex (mkRegex "<!--.*(.*\n)*.*-->") xs "")
 ```
 
-We try to provide an equivalent structure with others common language stacks, like e.g. Python:
+We try to provide an equivalent structure with other common language stacks, like e.g. Python:
 
 ```python
 #!/usr/bin/env @python
@@ -33,9 +33,9 @@ We try to provide an equivalent structure with others common language stacks, li
 print("Wow, it was smooth! I'm ready to build stuffs :)")
 ```
 
-Kombucha aliases always start by `@` symbol to not enter in conflict with existent softwares in your `PATH`.
+Kombucha aliases always start with the `@` symbol to not enter in conflict with existent software in your `PATH`.
 
-By combining theses utils together we intent to help the writing of simpler and more robust build suites.
+By combining these utils we intent to help the writing of simpler and more robust build suites.
 
 The idea of using GitHub as a service to handle aliases was directly inspired by [HomeBrew Formula](https://github.com/Homebrew/homebrew-core/tree/master/Formula)!
 
