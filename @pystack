@@ -1,0 +1,7 @@
+#! /usr/bin/env yeast
+
+
+# --cpython
+# --python2
+# --virtual-env
+# --purity-check

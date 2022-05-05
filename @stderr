@@ -1,0 +1,3 @@
+#! /usr/bin/env yeast
+#! sh $0 $1
+yeast $1 >&2

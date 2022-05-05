@@ -69,7 +69,7 @@ kombucha <COMMAND>
 
 #### Flags
 
-- `-h`, `--help` Prints help information String
+- `-h`, `--help` Prints help information
 - `-V`, `--version` Prints version information
 
 #### Commands
@@ -82,6 +82,15 @@ export PATH="$HOME/.kombucha:$PATH"
 ```
 
 ## Contributing
+
+## Roadmap
+
+- [ ] Random UUID
+- [ ] TODO Need a kind of namespace == Share $@ using environnement variable
+
+## Submiting a new alias and others contributings
+
+Submitting a package process TODO ...
 
 Please read [CONTRIBUTING.md](https://github.com/yvan-sraka/Kombucha/blob/master/CONTRIBUTING.md) for details on our code of conduct, and the process for submitting pull requests to us.
 
