@@ -8,3 +8,5 @@ mkdir -p ~/.cache/kombucha/bin/
 gcc ~/.cache/kombucha/src/$$.c -o  ~/.cache/kombucha/bin/$$.out
 
 ~/.cache/kombucha/bin/$$.out
+
+# TODO https://help.ubuntu.com/community/HowToSHA256SUM

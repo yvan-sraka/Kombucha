@@ -1,0 +1,15 @@
+#! /usr/bin/env yeast
+#! sh $0 $1
+
+# TODO: Random uuid
+mkdir -p /tmp/kombucha/src/$$/
+cat $1 > /tmp/kombucha/src/$$/$1
+
+hash=($(md5sum /tmp/yeast/uuid/$1))
+
+# TODO: Check if file already exist before do that
+mkdir -p /tmp/kombucha/bin/
+rustc /tmp/kombucha/src/$$/$1 -o /tmp/kombucha/bin/$hash
+rm /tmp/kombuha/src/$$/$1
+
+/tmp/kombucha/bin/$hash
